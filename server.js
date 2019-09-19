@@ -4,7 +4,7 @@ const server = express()
 server.use(express.json())
 
 server.get('/', (req,res) => {
-    res.json("it's working!!!")
+    res.status(200).json("it's working!!!")
 })
 
 
